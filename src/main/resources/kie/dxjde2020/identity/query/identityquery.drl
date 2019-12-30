@@ -10,6 +10,13 @@ import cho.carbon.biz.constant.item.DXJDE2020Item;
 global java.lang.String recordName;
 global cho.carbon.query.model.FGConJunctionFactory conJunctionFactory;
 
+rule "new rule"
+	when
+		eval( true )
+	then
+	    cho.carbon.biz.common.OutputDisplay.showText("融合劳斯莱斯类实例");
+end
+
 rule "姓名 and 身份证号 criteria" 
 	activation-group "people查询条件"
 	salience 9  
